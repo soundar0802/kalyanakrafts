@@ -1,0 +1,82 @@
+/* ============================================================
+   Kalyanam Krafts — footer
+   ============================================================ */
+
+.site-footer {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 28px;
+}
+.site-footer__cols {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding: 28px;
+  border-radius: 30px;
+  background: var(--hv-glass);
+  border: 1px solid var(--hv-rim);
+  box-shadow: var(--hv-shadow);
+}
+.site-footer__brand p {
+  color: var(--hv-muted);
+  font-size: 13.5px;
+  margin-top: 14px;
+  max-width: 34ch;
+}
+.site-footer__brand address {
+  font-style: normal;
+  color: var(--hv-muted);
+  font-size: 12.5px;
+  line-height: 1.75;
+  margin-top: 14px;
+  max-width: 40ch;
+}
+.site-footer__brand address strong {
+  color: var(--hv-ink);
+}
+.site-footer__col {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  font-size: 13.5px;
+}
+.site-footer__col h4 {
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hv-faint);
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.site-footer__col a:hover {
+  color: var(--hv-violet);
+}
+.site-footer__bot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 18px 6px 0;
+  font-size: 12.5px;
+  color: var(--hv-faint);
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+.site-footer__social .bi {
+  font-size: 16px;
+  line-height: 1;
+  display: inline-flex;
+}
+.site-footer__col span {
+  color: var(--hv-muted);
+}
+
+.site-footer .logo__img {
+  width: 76px;
+  height: 76px;
+}

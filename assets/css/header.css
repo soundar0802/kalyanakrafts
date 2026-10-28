@@ -1,0 +1,188 @@
+/* ============================================================
+   Kalyanam Krafts — header
+   Logo, the glass nav pills and the mobile menu.
+   ============================================================ */
+
+.nav-pills-glass {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--hv-glass);
+  border: 1px solid var(--hv-rim);
+  box-shadow: var(--hv-shadow);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-pills-glass::-webkit-scrollbar {
+  display: none;
+}
+.nav-pills-glass__ink {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: calc(100% - 8px);
+  border-radius: 999px;
+  background: var(--hv-ink);
+  transition:
+    transform 0.45s var(--hv-ease),
+    width 0.45s var(--hv-ease),
+    opacity 0.25s;
+  opacity: 0;
+  z-index: 0;
+}
+.nav-pill {
+  position: relative;
+  z-index: 1;
+  padding: 10px 17px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s;
+  color: var(--hv-ink, #16110e);
+  text-decoration: none;
+}
+.nav-pill.on-ink {
+  color: var(--hv-cream, #fbf7f0) !important;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  display: block;
+  height: 33px;
+  width: auto;
+}
+.site-header {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+.site-header__tabs {
+  margin-inline: auto;
+}
+.site-header__end {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.site-header__menu {
+  display: none;
+  background: var(--hv-glass-2);
+  border-color: var(--hv-rim);
+  width: 44px;
+  height: 44px;
+}
+.logo {
+  gap: 10px;
+  font-family: var(--hv-font);
+}
+.logo .logo__img {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 10px 22px -12px rgba(92, 42, 14, 0.6);
+  transition: transform 0.5s var(--hv-ease);
+}
+.site-header__brand:hover .logo__img {
+  transform: rotate(-8deg) scale(1.05);
+}
+.logo__word {
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+  color: #5c2a0e; /* the brown from the logo */
+}
+.logo__word em {
+  font-style: normal;
+  color: #b8860b;
+}
+.mobile-menu.offcanvas-top {
+  height: auto;
+  max-height: 92vh;
+  margin: 10px;
+  border-radius: 26px;
+  border: 1px solid var(--hv-rim) !important;
+  background: rgba(251, 247, 240, 0.92);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--hv-shadow-pop);
+  font-family: var(--hv-font);
+  color: var(--hv-ink);
+  --hv-shadow-pop: 0 28px 60px -18px rgba(48, 30, 12, 0.38);
+}
+.mobile-menu.offcanvas-top {
+  bottom: auto;
+  height: auto !important;
+}
+.mobile-menu .offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 8px 18px;
+}
+.mobile-menu .offcanvas-body {
+  flex: none;
+  padding: 4px 12px 16px;
+}
+.mobile-menu .btn-circle svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.mobile-menu .btn-circle .bi {
+  font-size: 16px;
+  line-height: 1;
+  display: inline-flex;
+}
+.mobile-menu__links {
+  display: grid;
+  margin-bottom: 14px;
+}
+.mobile-menu__links a {
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--hv-ink);
+  text-decoration: none;
+}
+.mobile-menu__links a:hover {
+  background: rgba(22, 17, 14, 0.055);
+}
+.mobile-menu .btn-pill svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.site-header__social {
+  width: 44px;
+  height: 44px;
+  background: var(--hv-glass);
+  border-color: var(--hv-rim);
+}
+.site-header__social .bi {
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+}

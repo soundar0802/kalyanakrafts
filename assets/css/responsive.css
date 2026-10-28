@@ -1,0 +1,292 @@
+/* ============================================================
+   Kalyanam Krafts — responsive
+   Every breakpoint for the page, widest first as in the original order.
+   ============================================================ */
+@media (max-width: 1080px) {
+  .site-header__tabs {
+    display: none;
+  }
+  .site-header__end {
+    margin-left: auto;
+  }
+  .site-header__menu {
+    display: grid;
+  }
+  .split,
+  .split--57 {
+    grid-template-columns: 1fr;
+  }
+  .site-footer__cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 640px) {
+  .xs-hide {
+    display: none;
+  }
+  .xs-show {
+    display: inline;
+  }
+  .eyebrow {
+    font-size: 12px;
+    padding-right: 14px;
+  }
+  .hero-title {
+    font-size: clamp(30px, 9.4vw, 64px);
+  }
+  .highlight .occasion-tag {
+    display: none;
+  }
+  .occasion-tag.occasion-tag--flow {
+    display: inline-flex;
+    position: static;
+    margin: 14px auto 0;
+    transform: rotate(-3deg);
+    transform-origin: center;
+    font-size: 12.5px;
+    gap: 6px;
+  }
+  .marquee {
+    border-radius: 22px;
+  }
+  .site-footer__cols {
+    padding: 22px;
+  }
+  .float-chip__h {
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .site-footer__cols {
+    grid-template-columns: 1fr;
+  }
+  .btn-pill {
+    height: 48px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 640px) {
+  .occasion-tag.occasion-tag--flow {
+    display: none;
+  }
+  .counter__board {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .home > main,
+  .site-header,
+  .site-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+}
+@media (max-width: 760px) {
+  .rack-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .rack-ledge {
+    margin-top: -6px;
+  }
+  .rack-card .rack-env {
+    inset: -4px -12% 3px 10%;
+  }
+  .rack-card .rack-bf {
+    top: 5px;
+    right: 5px;
+    font-size: 11px;
+    padding: 4px;
+  }
+  .rack-card .rack-open {
+    opacity: 1;
+    translate: 0 0;
+    left: auto;
+    right: 6px;
+    gap: 0;
+  }
+  .rack-card .rack-open span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .rack-card .rack-open svg {
+    width: 13px;
+    height: 13px;
+  }
+  .rack-card .rack-open .bi {
+    font-size: 13px;
+    line-height: 1;
+    display: inline-flex;
+  }
+  .rack-card:hover .rack-open,
+  .rack-card:focus-visible .rack-open {
+    translate: 0 0;
+  }
+}
+@media (max-width: 760px) {
+  .rack-end {
+    gap: 3px;
+  }
+  .rack-end__s {
+    display: none;
+  }
+  .rack-end__ta {
+    line-height: 1.3;
+  }
+}
+@media (max-width: 760px) {
+  .rack-slot::before {
+    top: -22%;
+  }
+  .rack-ledge::after {
+    height: 1px;
+  }
+}
+@media (max-width: 760px) {
+  .rack {
+    --hvr-floor: 12px;
+    padding-top: 14px;
+  }
+  .rack-row {
+    gap: clamp(16px, 5vw, 24px);
+    padding: 0 clamp(10px, 3.4vw, 16px);
+  }
+  .rack-ledge {
+    height: 17px;
+    margin: -5px 8px 0;
+  }
+  .rack-ledge::after {
+    top: 5px;
+  }
+  .rack-card,
+  .rack-end {
+    max-width: 120px;
+  }
+  .rack-plant--pothos {
+    --w: 92px;
+  }
+  .rack-plant--snake {
+    --w: 62px;
+  }
+  .rack-plant--fern {
+    --w: 100px;
+  }
+  .rack-plant {
+    margin-bottom: -5px;
+  }
+  .rack-end {
+    padding: 30px 8px 8px;
+    gap: 3px;
+    border-radius: 10px;
+  }
+  .rack-end__s {
+    display: none;
+  }
+  .rack-end__ta {
+    font-size: 10.5px;
+    line-height: 1.3;
+  }
+  .rack-end__t {
+    font-size: 12.5px;
+    line-height: 1.15;
+  }
+  .rack-end__go {
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    right: 7px;
+  }
+  .rack-end__go svg {
+    width: 12px;
+    height: 12px;
+  }
+  .rack-end__go .bi {
+    font-size: 12px;
+    line-height: 1;
+    display: inline-flex;
+  }
+  .rack-card .rack-open {
+    padding: 5px;
+    bottom: 5px;
+  }
+}
+@media (max-width: 760px) {
+  .rack-slot .rack-card {
+    width: min(100%, calc(80% * var(--cs, 1)));
+  }
+}
+@media (max-width: 640px) {
+  .viewer__nav {
+    position: absolute !important;
+    bottom: -2px;
+    z-index: 3;
+  }
+  .viewer__nav--prev {
+    left: calc(50% - 110px);
+  }
+  .viewer__nav--next {
+    right: calc(50% - 110px);
+  }
+  .viewer__stage {
+    padding-bottom: 56px;
+  }
+  .viewer__hint {
+    display: none;
+  }
+  .logo__word {
+    font-size: 17px;
+  }
+  .logo .logo__img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ---------- portfolio sections ---------- */
+@media (max-width: 991.98px) {
+  /* two columns: each large post becomes a full-width banner, so every row stays full */
+  .insta__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .insta-post--big {
+    grid-column: span 2;
+    grid-row: auto;
+    aspect-ratio: 16 / 10;
+  }
+}
+@media (max-width: 640px) {
+  .site-header__social {
+    display: none;
+  }
+  .style-filter__btn {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+  .insta__profile {
+    flex-wrap: wrap;
+  }
+  .insta__profile .btn-pill {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .insta__grid {
+    gap: 10px;
+  }
+  .insta-post {
+    border-radius: 16px;
+  }
+  .contact {
+    border-radius: 26px;
+  }
+  .contact__list a {
+    width: 100%;
+  }
+}
